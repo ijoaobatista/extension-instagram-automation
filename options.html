@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>MJobi - Opções da extensão</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/material-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="css/options/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/options/option.css">
+</head>
+<body class="grey lighten-3">
+	
+	<header>
+		<div class="navbar-fixed">
+			<nav class="grey darken-4">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="slide-out" class="button-collapse show-on-large">
+						<i class="material-icons">menu</i>
+					</a>
+					<span class="brand-logo">Configurações</span>
+					<ul class="right hide-on-med-and-down">
+						<li>
+							<a href="#" id="mail-send" class="waves-effect waves-light" title="Enviar E-mail">
+								<i class="material-icons">mail</i>
+							</a>
+						</li>
+						<li>
+							<a href="https://youtube.com/" class="waves-effect waves-light" target="_blank" title="Tutoriais">
+								<i class="material-icons">play_circle_filled</i>
+							</a>
+						</li>
+						<li>
+							<a href="/helpers.html" class="waves-effect waves-light" title="Perguntas frequentes">
+								<i class="material-icons">help</i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!--Side nav-->
+		<ul id="slide-out" class="side-nav">
+			<nav class="z-depth-0 white nav">
+				<span class="pdnv grey-text text-darken-3">Configurações</span>
+			</nav>
+			<ul>
+				<li><a href="/main.html" class="waves-effect">
+					<i class="material-icons grey-text text-darken-2">dashboard</i>Dashboard</a>
+				</li>
+				<li><a href="/helpers.html" class="waves-effect">
+					<i class="material-icons grey-text text-darken-2">help</i>Perguntas frequentes</a>
+				</li>
+				<div class="divider"></div>
+				<div class="section">
+					<li><a href="#" class="waves-effect" id="tinite" data-mod="Tempo de inicialização" data-tag="cinite">
+						<i class="material-icons pink-text">watch_later</i>Tempo de inicialização</a>
+					</li>
+					<li><a href="#" class="waves-effect" id="twidget" data-mod="Personalizar widget" data-tag="cwidget">
+						<i class="material-icons deep-orange-text text-accent-3">fiber_manual_record</i>Personalizar widget</a>
+					</li>
+					<li><a href="#" class="waves-effect" id="tfeed" data-mod="Conf. modulo Feed" data-tag="cfeed">
+						<i class="material-icons green-text">view_agenda</i>Conf. modulo Feed</a>
+					</li>
+					<li><a href="#" class="waves-effect" id="texplore" data-mod="Conf. modulo Explorar" data-tag="cexplore">
+						<i class="material-icons blue-text">explore</i>Conf. modulo Explorar</a>
+					</li>
+					<li><a href="#" class="waves-effect" id="tlocation" data-mod="Meus locais" data-tag="clocation">
+						<i class="material-icons red-text">place</i>Meus locais</a>
+					</li>
+					<li><a href="#" class="waves-effect" id="thash" data-mod="Minhas Hashtags" data-tag="chash">
+						<i class="material-icons amber-text">turned_in</i>Minhas Hashtags</a>
+					</li>
+				</div>
+			</ul>
+		</ul>
+	</header>
+
+	<main class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<div class="module-box white z-depth-2">
+						<div class="toolbar">
+							<a href="#" id="back" class="waves-effect left">
+								<i class="material-icons tollicon grey-text text-darken-3">arrow_back</i>
+							</a>
+							<h1 class="title-toolbar"></h1>
+						</div>
+						<div class="content-module"></div>
+					</div>
+					<div class="main-box">
+						<div class="section">
+							<span class="title-section">Conta de usuário</span>
+						</div>
+						<ul class="collapsible" data-collapsible="expandable">
+							<li>
+								<div class="collapsible-header clck">
+									<div class="chip white">
+										<img draggable="false" class="img-p" src="img/default_profile_300.png">
+										<span id="user-n">Nenhum usuário</span>
+									</div>
+									<div class="chip deep-orange white-text hoverable z-depth-1 waves-effect waves-light user-c">
+										<span id="edit-c">Adicionar usuário</span>
+									</div>
+								</div>
+								<div class="collapsible-body white hide show-usr">
+									<div class="row">
+										<div class="col s6">
+											<div class="input-field">
+												<input id="useraccount" type="text" placeholder="@usuário">
+												<label id="lbl" for="useraccount">Adicione o @ antes do nome de usuário</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="section">
+							<span class="title-section">Inicialização</span>
+						</div>
+						<ul class="collapsible" data-collapsible="expandable">
+							<li>
+								<div class="collapsible-header">Ativar módulos selecionados
+									<div class="switch">
+										<label>
+											<input type="checkbox" id="inite">
+											<span class="lever"></span>
+										</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header">Exibir widget
+									<div class="switch">
+										<label>
+											<input type="checkbox" id="widget">
+											<span class="lever"></span>
+										</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header">Proteção contra cliques
+									<div class="switch">
+										<label>
+											<input type="checkbox" id="no-click">
+											<span class="lever"></span>
+										</label>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="section">
+							<span class="title-section">Modulos</span>
+						</div>
+						<ul class="collapsible" data-collapsible="expandable">
+							<li>
+								<div class="collapsible-header">Feed
+									<div class="switch">
+										<label>
+											<input type="checkbox" id="feed">
+											<span class="lever"></span>
+										</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header">Explorar
+									<div class="switch">
+										<label>
+											<input type="checkbox" id="explore">
+											<span class="lever"></span>
+										</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header">Explorar pessoas
+									<div class="switch">
+										<label>
+											<input type="checkbox" id="explore-people">
+											<span class="lever"></span>
+										</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header">Localização
+									<div class="switch">
+										<label>
+											<input type="checkbox" id="location">
+											<span class="lever"></span>
+										</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header">Hashtags
+									<div class="switch">
+										<label>
+											<input type="checkbox" id="hashtags">
+											<span class="lever"></span>
+										</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header">Seguindo
+									<div class="switch">
+										<label>
+											<input type="checkbox" id="follow">
+											<span class="lever"></span>
+										</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header">Seguidores
+									<div class="switch">
+										<label>
+											<input type="checkbox" id="followers">
+											<span class="lever"></span>
+										</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header">Stories
+									<div class="switch">
+										<label>
+											<input type="checkbox" id="stories">
+											<span class="lever"></span>
+										</label>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		
+	</footer>
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/mlayer.js"></script>
+<script type="text/javascript" src="js/options/modules-store.js"></script>
+<script type="text/javascript" src="js/options/option.js"></script>
+</body>
+</html>
+

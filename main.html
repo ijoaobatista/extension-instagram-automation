@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>MJobi - Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/c3.min.css">
+	<link rel="stylesheet" type="text/css" href="css/material-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="css/main/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/main/main.css">
+</head>
+<body class="grey lighten-3">
+
+	<header>
+		<div class="navbar-fixed">
+			<nav class="grey darken-4 accent-3">
+				<a href="#" data-activates="slide-out" class="button-collapse show-on-large">
+					<i class="material-icons">menu</i>
+				</a>
+				<div class="brand-logo m-box-logo center">
+					<a><i class="m-logo animated fadeIn"></i></a>
+				</div>
+				<ul class="right hide-on-med-and-down">
+					<li></li>
+				</ul>
+			</nav>
+		</div>
+		<!--Side nav-->
+		<ul id="slide-out" class="side-nav">
+			<nav class="z-depth-0 white nav">
+				<span class="pdnv grey-text text-darken-3">Dashboard</span>
+			</nav>
+			<ul>
+				<li><a href="/options.html" class="waves-effect">
+					<i class="material-icons grey-text text-darken-2">settings</i>Configurações</a>
+				</li>
+				<li><a href="/helpers.html" class="waves-effect">
+					<i class="material-icons grey-text text-darken-2">help</i>Perguntas frequentes</a>
+				</li>
+				<div class="divider"></div>
+				<div class="section">
+					<li><a href="#" class="waves-effect">
+						<i class="material-icons orange-text">sentiment_very_satisfied</i>Avalie-nos</a>
+					</li>
+				</div>
+				<li><a href="#" class="waves-effect">Privacidade e Segurança</a></li>
+				<li><a href="#" class="waves-effect">Sobre MJobi</a></li>
+			</ul>
+		</ul>
+	</header>
+
+	<main class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<p class="m-info-count m-label">Dashboard</p>
+					<div class="row">
+						<div class="col s4">
+							<div class="card-panel">
+								<div class="m-image-p">
+									<img class="profile" draggable="false" src="img/default_profile_300.png">
+								</div>
+								<p class="m-label-count center">
+									<a id="linkP" class="black-text" href="/options.html" target="_blank">Adicionar usuário</a>
+									<i id="icon-m" class="material-icons white-text"></i>
+								</p>
+								<div class="row">
+									<div class="col s4 center">
+										<span class="m-info-count pub">0</span>
+										<p class="grey-text">Publicações</p>
+									</div>
+									<div class="col s4 center">
+										<span class="m-info-count flw">0</span>
+										<p class="grey-text">Seguidores</p>
+									</div>
+									<div class="col s4 center">
+										<span class="m-info-count fwg">0</span>
+										<p class="grey-text">Seguindo</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col s4">
+							<div class="card-panel">
+								<span class="m-info-count m-info-margin">Configurações
+									<i class="material-icons tiny right grey-text text-darken-2">settings</i>
+								</span><br>
+								<span class="grey-text">
+									Modifique comportamentos e personalize a extensão do modo como preferir. Cadastre Hashtags, Inicialização etc.<a href="options.html"> Configurações</a>
+								</span>
+							</div>
+							<div class="card-panel">
+								<span class="m-info-count m-info-margin">Perguntas frequentes
+									<i class="material-icons tiny right grey-text text-darken-2">help</i>
+								</span><br>
+								<span class="grey-text">
+									Confira dúvidas comuns que a maioria dos usuários tem com relação ao tema "Automação para Instagram"<a href="helpers.html"> Perguntas frequentes</a>
+								</span>
+							</div>
+						</div>
+						<div class="col s4">
+							<div class="card-panel">
+								<div class="m-image-p">
+									<a class="btn-floating pulse z-depth-0 red lighten-4">
+										<i class="material-icons red-text text-darken-1">favorite</i>
+									</a>
+								</div>
+								<p class="center m-big-fv truncate">-</p>
+								<div class="center">
+									<span class="grey-text">Publicações curtidas</span>
+								</div>
+							</div>
+							<div class="card-panel">
+								<span class="grey-text truncate">
+									<i class="material-icons left tiny">person_add</i>Você seguiu<span class="m-flw-c"> - </span>contas novas hoje
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12">
+					<p class="m-info-count m-label left">Automação semanal</p>
+					<p class="m-info-count m-label right">Conta</p>
+				</div>
+				<div class="col s6">
+					<div class="card">
+						<div class="card-content">
+							<canvas id="myChart"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="col s6">
+					<div class="card">
+						<div class="card-content">
+							<canvas id="myChart2"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		
+	</footer>
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/chart.min.js"></script>
+<script type="text/javascript" src="js/mlayer.js"></script>
+<script type="text/javascript" src="js/main/modules-store.js"></script>
+<script type="text/javascript" src="js/main/main.js"></script>
+</body>
+</html>
+

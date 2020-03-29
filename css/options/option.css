@@ -1,0 +1,73 @@
+.nav {
+	border-bottom: 1px solid #eeeeee;
+}
+
+.title-section {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.pdnv {
+	margin-left: 24px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.module-box {
+	display: none;
+	position: absolute;
+	overflow-x: hidden;
+	bottom: 0;
+	padding-top: 64px;
+	width: 680px;
+	height: 100%;
+	z-index: 996;
+}
+
+@media only screen and (max-width : 992px) {
+	.module-box {
+		width: 90%;
+	}
+}
+
+.toolbar {
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 24px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.title-toolbar {
+	font-size: 14px;
+	margin-top: 9.380px;
+	margin-bottom: 9.380px;
+	font-weight: 500;
+}
+
+.tollicon {
+	font-size: 20px;
+	width: 36px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+}
+
+#back {
+	border-radius: 100%;
+}
+
+.s-box {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.b-none {
+	border: none;
+}
+
+.p-20 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+

@@ -1,0 +1,87 @@
+.m-box-logo {
+	width: 30px;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.m-logo {
+	width: 32px;
+	height: 32px;
+	background-image: url(../../img/icons/icon_32.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.pdnv {
+	margin-left: 24px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.nav {
+	border-bottom: 1px solid #eeeeee;
+}
+
+.profile {
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+}
+
+.m-image-p {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.m-label-count {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.m-info-count {
+	font-size: 14px;
+}
+
+.m-label {
+	font-weight: 500;
+}
+
+.m-info-margin {
+	margin-bottom: 8px;
+}
+
+.m-big-fv {
+	font-size: 38px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.m-label-count {
+	transition: 0.250s;
+}
+
+.m-label-count:hover {
+	background-color: #0288d1;
+	border-radius: 20px;
+	box-shadow: 0 3px 10px rgba(0,0,0,.2), 0 3px 15px rgba(0,0,0,.2);
+}
+
+#linkP {
+	transition: 0.250s;
+}
+
+#linkP:hover {
+	margin-right: 10px;
+	font-size: 14px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 3.3px;
+}
+
+#icon-m {
+	font-size: 12px;
+}
+

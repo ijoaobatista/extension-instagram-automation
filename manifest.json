@@ -1,0 +1,64 @@
+{
+	"manifest_version": 2,
+	"name": "MJobi",
+	"short_name": "MJobi",
+	"version": "1.0.0",
+	"version_name": "MJobi - 1.0.0 BETA",
+	"default_locale": "pt_PT",
+	"description": "__MSG_manifestDescription__",
+	"homepage_url": "https://mjobi.com/extension",
+	"icons": 
+	{
+		"16": "img/icons/icon_16.png",
+		"32": "img/icons/icon_32.png",
+		"48": "img/icons/icon_48.png",
+		"128": "img/icons/icon_128.png"
+	},
+	"browser_action": 
+	{
+		"default_icon": 
+		{
+			"16": "img/icons/icon_16.png",
+			"32": "img/icons/icon_32.png",
+			"48": "img/icons/icon_48.png",
+			"128": "img/icons/icon_128.png"
+		},
+		"default_title": "MJobi"
+	},
+	"background": 
+	{
+		"scripts": 
+		[
+			"js/jquery-3.3.1.min.js",
+			"js/backgrounds/modules-store.js",
+			"js/backgrounds/background.js"
+		],
+		"persistent": false
+	},
+	"content_scripts": 
+	[{
+		"matches": 
+		[
+			"https://*.instagram.com/*"
+		],
+		"js": 
+		[
+			"js/jquery-3.3.1.min.js",
+			"js/contents/content.js"
+		],
+		"css": 
+		[
+			"css/contents/style.css"
+		],
+		"all_frames": true
+	}],
+	"permissions": 
+	[
+		"https://*.instagram.com/*",
+		"activeTab",
+		"unlimitedStorage",
+		"storage"
+	],
+	"options_page": "options.html"
+}
+
